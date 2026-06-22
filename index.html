@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.77">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;title&gt;Quiz yaratish&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">body{</p>
+<p class="p1">font-family: Arial;</p>
+<p class="p1">padding:20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">input, select, button{</p>
+<p class="p1">width:100%;</p>
+<p class="p1">padding:12px;</p>
+<p class="p1">margin:8px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;📝 Savol tuzish&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;input id="question" placeholder="Savol"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;input id="a" placeholder="A variant"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;input id="b" placeholder="B variant"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;input id="c" placeholder="C variant"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;input id="d" placeholder="D variant"&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;select id="answer"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;option&gt;A&lt;/option&gt;</p>
+<p class="p1">&lt;option&gt;B&lt;/option&gt;</p>
+<p class="p1">&lt;option&gt;C&lt;/option&gt;</p>
+<p class="p1">&lt;option&gt;D&lt;/option&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;button onclick="save()"&gt;</p>
+<p class="p1">Saqlash</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script src="https://telegram.org/js/telegram-web-app.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">let tg = window.Telegram.WebApp;</p>
+<p class="p2"><br></p>
+<p class="p1">tg.expand();</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">function save(){</p>
+<p class="p2"><br></p>
+<p class="p1">let data = {</p>
+<p class="p2"><br></p>
+<p class="p1">question:</p>
+<p class="p1">document.getElementById("question").value,</p>
+<p class="p2"><br></p>
+<p class="p1">A:</p>
+<p class="p1">document.getElementById("a").value,</p>
+<p class="p2"><br></p>
+<p class="p1">B:</p>
+<p class="p1">document.getElementById("b").value,</p>
+<p class="p2"><br></p>
+<p class="p1">C:</p>
+<p class="p1">document.getElementById("c").value,</p>
+<p class="p2"><br></p>
+<p class="p1">D:</p>
+<p class="p1">document.getElementById("d").value,</p>
+<p class="p2"><br></p>
+<p class="p1">answer:</p>
+<p class="p1">document.getElementById("answer").value</p>
+<p class="p2"><br></p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">tg.sendData(JSON.stringify(data));</p>
+<p class="p2"><br></p>
+<p class="p1">tg.close();</p>
+<p class="p2"><br></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
